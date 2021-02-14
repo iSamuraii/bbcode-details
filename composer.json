@@ -1,6 +1,6 @@
 {
-  "name": "fof/bbcode-details",
-  "description": "Details BBCode for Flarum",
+  "name": "iSamuraii/bbcode-details",
+  "description": "Spoiler BBCode for Flarum (BBCodeDetails of fof but with another bbcode)",
   "keywords": [
     "flarum"
   ],
@@ -42,7 +42,7 @@
   },
   "extra": {
     "flarum-extension": {
-      "title": "FoF BBCode Details",
+      "title": "FoF BBCode Spoiler",
       "category": "formatting",
       "icon": {
         "name": "fas fa-minus-square",
