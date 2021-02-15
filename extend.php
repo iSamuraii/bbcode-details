@@ -11,8 +11,8 @@ return [
     (new Extend\Formatter())
         ->configure(function (Configurator $configurator) {
             $configurator->BBCodes->addCustom(
-                '[SPOILER title={TEXT1;optional}]{TEXT2}[/SPOILER]',
-                '<details><summary>{TEXT1}</summary><div>{TEXT2}</div></details>'
+                '[SPOILER title={TEXT1;optional;defaultValue=SPOILER}]{TEXT2}[/SPOILER]',
+                '<details class="ext-spoiler"><summary>{TEXT1}</summary><div>{TEXT2}</div></details>'
             );
         }),
 ];
