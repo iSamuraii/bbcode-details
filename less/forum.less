@@ -17,8 +17,11 @@
   }
 }
 
-details {
-  padding: 0.5em 0;
+.ext-spoiler {
+  border: 1px solid #f5f5f5;
+  padding: 0.5em .5rem;
+  border-radius: .25rem;
+  background-color: #fcfcfc;
   transition: height 500ms ease-in;
 
   summary:focus {
@@ -26,6 +29,7 @@ details {
   }
 
   summary {
+    padding: .5rem 0;
     cursor: pointer;
     display: block;
   }
@@ -41,10 +45,21 @@ details {
     animation-duration: 500ms, 200ms;
     animation-delay: 0ms, 500ms;
   }
+
+  body when (@config-dark-mode = true) {
+    color: #808080;
+    background-color: #212121;
+    border-color: #222;
+
+    > div {
+      border-left: 1px solid #808080;
+    }
+  }
 }
 
+
 .no-details {
-  details {
+  .ext-spoiler {
     summary:before {
       content: '► ';
       font-size: 12px;
