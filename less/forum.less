@@ -45,8 +45,11 @@
     animation-duration: 500ms, 200ms;
     animation-delay: 0ms, 500ms;
   }
+}
 
-  body when (@config-dark-mode = true) {
+// Dark mode
+body when (@config-dark-mode = true) {
+  .ext-spoiler {
     color: #808080;
     background-color: #212121;
     border-color: #222;
